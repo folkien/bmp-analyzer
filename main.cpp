@@ -34,7 +34,7 @@ struct TbitmapHeader {
     _dword biYPelsPerMeter;
     _dword biClrUsed;
     _dword biClrImportant;
-};
+} __attribute__((packed));
 
 void print_hex_array(char *array, unsigned int size) {
      unsigned int i;
